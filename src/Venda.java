@@ -14,8 +14,10 @@ public class Venda {
         this.processador = processador;
 
     }
-     void finalizarVenda();
-    
+     public void finalizarVenda(){
+        processador.processarVenda(this);
+     }
+
     //List<Medicamento> medicamentos = new ArrayList<>();
 
 }

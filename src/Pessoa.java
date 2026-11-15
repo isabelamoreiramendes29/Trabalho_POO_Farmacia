@@ -7,7 +7,9 @@ public abstract class Pessoa {
         this.nome = nome;
         this.cpf = cpf;
     }
-
+    public String getNome(){
+        return nome;
+    }
     public abstract void exibirDados();
 
 }

@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.InputMismatchException;
+
 
 public class Main {
 
@@ -27,8 +29,15 @@ public class Main {
             System.out.println("4 - Realizar venda");
             System.out.println("5 - Sair ");
 
-            opcao = entrada.nextInt();
-            entrada.nextLine();
+            try{
+                opcao = entrada.nextInt();
+                entrada.nextLine();
+            }
+            catch (InputMismatchException e){
+                System.out.println("Digite apenas números!");
+                entrada.nextLine();
+            }
+
             switch (opcao) {
                 case 1:
                     System.out.print("Nome: ");
@@ -53,21 +62,22 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.print("Escolha o cliente: ");
+                    System.out.println("Escolha o cliente: ");
                     for (int i = 0; i < clientes.size(); i++) {
                         System.out.print((i + 1) + " - ");
                         clientes.get(i).exibirDados();
                     }
                     int numeroCliente = entrada.nextInt();
-                    Cliente Cescolhido = numeroCliente;
+                    Cliente Cescolhido = clientes.get(numeroCliente-1);
 
-                    System.out.print("Escolha o farmaceutico:");
+
+                    System.out.println("Escolha o farmaceutico:");
                     for (int i = 0; i < farmaceuticos.size(); i++) {
                         System.out.print((i+1) + " - ");
                         farmaceuticos.get(i).exibirDados();
                     }
                     int numeroFarmaceutico = entrada.nextInt();
-                    Farmaceutico Fescolhido = numeroFarmaceutico;
+                    Farmaceutico Fescolhido = farmaceuticos.get(numeroFarmaceutico-1);
 
                     Venda venda = new Venda(Cescolhido, Fescolhido, processadorvendapadrao);
                     venda.finalizarVenda();

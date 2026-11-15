@@ -14,19 +14,19 @@ public class Venda {
         this.processador = processador;
 
     }
-    public String getCliente(){
+    public Cliente getCliente(){
         return cliente;
     }
-    public String getFarmaceutico(){
+    public Farmaceutico getFarmaceutico(){
         return farmaceutico;
     }
-    public String getvalorTotal(){
+    public double getValorTotal(){
         return valorTotal;
     }
     public void finalizarVenda(){
         processador.processarVenda(this);
      }
 
-    List<Medicamento> medicamentos = new ArrayList<>();
+   // List<Medicamento> medicamentos = new ArrayList<>();
 
 }

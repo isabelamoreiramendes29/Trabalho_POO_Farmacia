@@ -1,0 +1,226 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="uml-farmacia" name="UML Farmácia">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1900" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;strokeColor=none;fillColor=none;" value="Sistema de Farmácia – Diagrama de Classes UML" vertex="1">
+          <mxGeometry height="40" width="700" x="520" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="«abstract»&lt;br&gt;&lt;b&gt;&lt;i&gt;Pessoa&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="260" x="205" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-a" parent="pessoa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# nome: String&lt;br&gt;# cpf: String" vertex="1">
+          <mxGeometry height="46" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-d" parent="pessoa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-m" parent="pessoa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Pessoa(nome: String, cpf: String)&lt;br&gt;&lt;i&gt;+ exibirDados(): void&lt;/i&gt;" vertex="1">
+          <mxGeometry height="46" width="260" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Cliente&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-a" parent="cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- telefone: String" vertex="1">
+          <mxGeometry height="28" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-d" parent="cliente" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-m" parent="cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Cliente(nome: String, cpf: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;telefone: String)&lt;br&gt;+ exibirDados(): void" vertex="1">
+          <mxGeometry height="64" width="260" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="farmaceutico" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Farmaceutico&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="290" x="340" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="farmaceutico-a" parent="farmaceutico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- crf: String" vertex="1">
+          <mxGeometry height="28" width="290" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="farmaceutico-d" parent="farmaceutico" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="farmaceutico-m" parent="farmaceutico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Farmaceutico(nome: String, cpf: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;crf: String)&lt;br&gt;+ exibirDados(): void" vertex="1">
+          <mxGeometry height="64" width="290" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="venda" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Venda&lt;/b&gt;" vertex="1">
+          <mxGeometry height="256" width="320" x="720" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="venda-a" parent="venda" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- valorTotal: double&lt;br&gt;- cliente: Cliente&lt;br&gt;- farmaceutico: Farmaceutico&lt;br&gt;- medicamentos: List&amp;lt;Medicamento&amp;gt;&lt;br&gt;- processador: ProcessadorVenda" vertex="1">
+          <mxGeometry height="100" width="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="venda-d" parent="venda" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="venda-m" parent="venda" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Venda(cliente: Cliente,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;farmaceutico: Farmaceutico,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;processador: ProcessadorVenda)&lt;br&gt;+ adicionarMedicamento(m: Medicamento): void&lt;br&gt;+ calcularTotal(): double&lt;br&gt;+ finalizarVenda(): void" vertex="1">
+          <mxGeometry height="118" width="320" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="medicamento" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="«abstract»&lt;br&gt;&lt;b&gt;&lt;i&gt;Medicamento&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="194" width="300" x="1300" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="medicamento-a" parent="medicamento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# nome: String&lt;br&gt;# preco: double&lt;br&gt;# quantidadeEstoque: int" vertex="1">
+          <mxGeometry height="64" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="medicamento-d" parent="medicamento" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="medicamento-m" parent="medicamento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Medicamento(nome: String, preco: double,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;quantidadeEstoque: int)&lt;br&gt;&lt;i&gt;+ exibirDados(): void&lt;/i&gt;&lt;br&gt;+ atualizarEstoque(qtd: int): void" vertex="1">
+          <mxGeometry height="82" width="300" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="generico" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;MedicamentoGenerico&lt;/b&gt;" vertex="1">
+          <mxGeometry height="148" width="300" x="1130" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="generico-a" parent="generico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- nomeReferencia: String" vertex="1">
+          <mxGeometry height="28" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="generico-d" parent="generico" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="generico-m" parent="generico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ MedicamentoGenerico(nome: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;preco: double, quantidadeEstoque: int,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nomeReferencia: String)&lt;br&gt;+ exibirDados(): void" vertex="1">
+          <mxGeometry height="82" width="300" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="referencia" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;MedicamentoReferencia&lt;/b&gt;" vertex="1">
+          <mxGeometry height="148" width="300" x="1470" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="referencia-a" parent="referencia" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- fabricante: String" vertex="1">
+          <mxGeometry height="28" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="referencia-d" parent="referencia" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="referencia-m" parent="referencia" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ MedicamentoReferencia(nome: String,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;preco: double, quantidadeEstoque: int,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fabricante: String)&lt;br&gt;+ exibirDados(): void" vertex="1">
+          <mxGeometry height="82" width="300" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="processador" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="«interface»&lt;br&gt;&lt;b&gt;ProcessadorVenda&lt;/b&gt;" vertex="1">
+          <mxGeometry height="86" width="250" x="825" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="processador-a" parent="processador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="10" width="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="processador-d" parent="processador" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="processador-m" parent="processador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ processarVenda(venda: Venda): void" vertex="1">
+          <mxGeometry height="28" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="padrao" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;ProcessadorVendaPadrao&lt;/b&gt;" vertex="1">
+          <mxGeometry height="112" width="340" x="780" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="padrao-a" parent="padrao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- arquivo: ArquivoVenda" vertex="1">
+          <mxGeometry height="28" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="padrao-d" parent="padrao" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="padrao-m" parent="padrao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ProcessadorVendaPadrao(arquivo: ArquivoVenda)&lt;br&gt;+ processarVenda(venda: Venda): void" vertex="1">
+          <mxGeometry height="46" width="340" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="arquivo" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;ArquivoVenda&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="310" x="380" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="arquivo-a" parent="arquivo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- caminho: String" vertex="1">
+          <mxGeometry height="28" width="310" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="arquivo-d" parent="arquivo" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="arquivo-m" parent="arquivo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ArquivoVenda(caminho: String)&lt;br&gt;+ salvarVenda(v: Venda): void&lt;br&gt;+ carregarMedicamentos(): List&amp;lt;Medicamento&amp;gt;" vertex="1">
+          <mxGeometry height="64" width="310" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="estoque" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;EstoqueInsuficienteException&lt;/b&gt;" vertex="1">
+          <mxGeometry height="76" width="350" x="1275" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="estoque-a" parent="estoque" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="10" width="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="estoque-d" parent="estoque" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="estoque-m" parent="estoque" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ EstoqueInsuficienteException(mensagem: String)" vertex="1">
+          <mxGeometry height="28" width="350" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="exception" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Exception&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="1370" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cliente-pessoa" edge="1" parent="1" source="cliente" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="pessoa" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-farmaceutico-pessoa" edge="1" parent="1" source="farmaceutico" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="pessoa" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-generico-medicamento" edge="1" parent="1" source="generico" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="medicamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-referencia-medicamento" edge="1" parent="1" source="referencia" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="medicamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-estoque-exception" edge="1" parent="1" source="estoque" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="exception" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-padrao-processador" edge="1" parent="1" source="padrao" style="endArrow=block;endSize=16;endFill=0;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="processador" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cliente-venda" edge="1" parent="1" source="cliente" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="venda" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="610" />
+              <mxPoint x="800" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-cliente-venda-r0" connectable="0" parent="e-cliente-venda" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="6" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-cliente-venda-r1" connectable="0" parent="e-cliente-venda" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="6" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-farmaceutico-venda" edge="1" parent="1" source="farmaceutico" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0;exitDx=0;exitDy=74;entryX=0;entryY=0;entryDx=0;entryDy=74;" target="venda" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-farmaceutico-venda-r0" connectable="0" parent="e-farmaceutico-venda" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="6" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-farmaceutico-venda-r1" connectable="0" parent="e-farmaceutico-venda" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-6" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-venda-medicamento" edge="1" parent="1" source="venda" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0;exitDx=0;exitDy=60;entryX=0;entryY=0;entryDx=0;entryDy=60;" target="medicamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-venda-medicamento-r0" connectable="0" parent="e-venda-medicamento" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="6" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-venda-medicamento-r1" connectable="0" parent="e-venda-medicamento" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-6" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-padrao-arquivo" edge="1" parent="1" source="padrao" style="endArrow=open;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0;exitDx=0;exitDy=56;entryX=1;entryY=0;entryDx=0;entryDy=56;" target="arquivo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-padrao-arquivo-r0" connectable="0" parent="e-padrao-arquivo" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="10" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-venda-processador" edge="1" parent="1" source="venda" style="endArrow=open;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.71875;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="processador" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-venda-processador-r0" connectable="0" parent="e-venda-processador" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="8" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

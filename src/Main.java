@@ -40,7 +40,7 @@ public class Main {
 
                     Cliente cliente = new Cliente(nome , cpf,telefone );
                     clientes.add(cliente);
-                    System.out.print("Cliente cadastrado!");
+                    System.out.println("Cliente cadastrado!");
                     break;
                 case 2:
                     for (int i = 0; i < clientes.size(); i++) {
@@ -53,18 +53,24 @@ public class Main {
                     break;
 
                 case 4:
+                    System.out.print("Escolha o cliente: ");
                     for (int i = 0; i < clientes.size(); i++) {
                         System.out.print((i + 1) + " - ");
                         clientes.get(i).exibirDados();
-
                     }
                     int numeroCliente = entrada.nextInt();
+                    Cliente Cescolhido = numeroCliente;
 
+                    System.out.print("Escolha o farmaceutico:");
                     for (int i = 0; i < farmaceuticos.size(); i++) {
                         System.out.print((i+1) + " - ");
                         farmaceuticos.get(i).exibirDados();
                     }
                     int numeroFarmaceutico = entrada.nextInt();
+                    Farmaceutico Fescolhido = numeroFarmaceutico;
+
+                    Venda venda = new Venda(Cescolhido, Fescolhido, processadorvendapadrao);
+                    venda.finalizarVenda();
                     break;
 
                 case 5:

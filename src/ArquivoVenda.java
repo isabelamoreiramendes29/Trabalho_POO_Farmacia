@@ -24,7 +24,7 @@ public class ArquivoVenda {
             }
 
             texto += "Cliente: " + v.getCliente().getNome() + "\n";
-            texto += "Valor total: " + v.getValorTotal() + "\n\n";
+            texto += "Valor total: " + String.format("%.2f", v.getValorTotal()) + "\n\n";
 
             Files.writeString(arquivo, texto);
 

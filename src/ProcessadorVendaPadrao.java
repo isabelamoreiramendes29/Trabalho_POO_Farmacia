@@ -15,7 +15,7 @@ public class ProcessadorVendaPadrao implements ProcessadorVenda{
         }
 
         arquivo.salvarVenda(venda);
-        System.out.println("Venda processada! Total: R$ " + venda.getValorTotal());
+        System.out.println("Venda processada! Total: R$ " + String.format("%.2f", venda.getValorTotal()));
     }
 
 }

@@ -1,3 +1,6 @@
 # Arquivos compilados pelo IntelliJ
 out/
 *.class
+
+# Arquivo editável do UML: fica só no computador; o repositório tem a imagem
+docs/uml-farmacia.drawio

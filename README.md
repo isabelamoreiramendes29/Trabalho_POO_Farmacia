@@ -2,6 +2,13 @@
 
 Sistema de farmácia em Java, desenvolvido como projeto final da disciplina C06 – Programação Orientada a Objetos.
 
+## Integrantes
+
+| Nome | Matrícula |
+| --- | --- |
+| Isabela Moreira Mendes | 2268 |
+| Yasmim Custodio | 149 |
+
 ## Utilização de Inteligência Artificial no Desenvolvimento
 
 Cada integrante da dupla usou uma ferramenta de IA diferente, por isso as declarações estão separadas.

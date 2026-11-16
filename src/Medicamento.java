@@ -10,10 +10,6 @@ public abstract class Medicamento {
         this.quantidadeEstoque = quantidadeEstoque;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     public double getPreco() {
         return preco;
     }

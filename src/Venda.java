@@ -20,10 +20,6 @@ public class Venda {
         return cliente;
     }
 
-    public Farmaceutico getFarmaceutico() {
-        return farmaceutico;
-    }
-
     public double getValorTotal() {
         return valorTotal;
     }

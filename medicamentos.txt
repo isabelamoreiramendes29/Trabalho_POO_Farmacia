@@ -1,0 +1,10 @@
+Generico;Dipirona 500mg;8.50;50;Novalgina
+Generico;Paracetamol 750mg;9.90;40;Tylenol
+Generico;Ibuprofeno 600mg;12.50;30;Alivium
+Generico;Omeprazol 20mg;10.00;35;Losec
+Generico;Loratadina 10mg;7.50;25;Claritin
+Referencia;Tylenol 750mg;18.90;20;Kenvue
+Referencia;Novalgina 500mg;16.50;30;Sanofi
+Referencia;Advil 400mg;24.90;15;Haleon
+Referencia;Alivium 400mg;22.50;20;Hypera
+Referencia;Claritin 10mg;28.90;15;Baye

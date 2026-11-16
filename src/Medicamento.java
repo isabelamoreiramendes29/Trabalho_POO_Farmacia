@@ -10,6 +10,14 @@ public abstract class Medicamento {
         this.quantidadeEstoque = quantidadeEstoque;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
     public abstract void exibirDados();
 
     public void atualizarEstoque(int qtd) throws EstoqueInsuficienteException {

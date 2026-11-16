@@ -111,6 +111,8 @@ public class Main {
                 System.out.println("Digite apenas números!");
                 entrada.nextLine();
                 opcao = 0;
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("Número inválido! Escolha um número da lista.");
             } catch (EstoqueInsuficienteException e) {
                 System.out.println("Venda não realizada: " + e.getMessage());
             }

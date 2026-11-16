@@ -13,8 +13,6 @@ Sistema de farmácia em Java, desenvolvido como projeto final da disciplina C06 
 
 ![Diagrama de classes UML do sistema de farmácia](docs/uml-farmacia.png)
 
-O arquivo editável do diagrama está em [docs/uml-farmacia.drawio](docs/uml-farmacia.drawio) e pode ser aberto no [draw.io](https://app.diagrams.net).
-
 ## Utilização de Inteligência Artificial no Desenvolvimento
 
 Cada integrante da dupla usou uma ferramenta de IA diferente, por isso as declarações estão separadas.

@@ -220,6 +220,9 @@
             <mxPoint x="8" y="-16" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="e-medicamento-estoque" edge="1" parent="1" source="medicamento" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="estoque" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
